@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Neoclassical Piano"
+description = "A promotional website for a neoclassical composer's music. Showcases albums and singles hosted on YouTube with thumbnails and links, notes Amazon Music availability, and features the artist's portrait."
+version = "1.0.0"
+id = "artifacts/neoclassical-piano"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19449
+
+[services.development]
+run = "pnpm --filter @workspace/neoclassical-piano run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/neoclassical-piano", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/neoclassical-piano/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19449"
+BASE_PATH = "/"
