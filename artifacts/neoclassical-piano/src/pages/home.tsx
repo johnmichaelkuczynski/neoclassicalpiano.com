@@ -8,8 +8,16 @@ export default function Home() {
     <main className="min-h-screen w-full bg-background selection:bg-accent selection:text-white">
       {/* Navigation / Header */}
       <nav className="fixed top-0 left-0 right-0 z-50 mix-blend-difference text-white px-6 py-6 flex justify-between items-center pointer-events-none">
-        <div className="font-mono text-xs uppercase tracking-widest font-bold">
-          Neoclassical Piano
+        <div className="flex items-center gap-6">
+          <a
+            href="mailto:zhi@zhisystems.org"
+            className="font-mono text-xs uppercase tracking-widest font-bold pointer-events-auto hover:underline"
+          >
+            Contact Me
+          </a>
+          <div className="font-mono text-xs uppercase tracking-widest font-bold">
+            Neoclassical Piano
+          </div>
         </div>
         <div className="font-mono text-xs uppercase tracking-widest hidden md:block">
           Composer &bull; Artist
