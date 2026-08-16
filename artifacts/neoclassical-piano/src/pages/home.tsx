@@ -3,6 +3,42 @@ import { albums, singles } from "@/data/music";
 import { MusicGrid } from "@/components/music-grid";
 import artistPortrait from "@assets/NEW_JM_AVATAR_1786600779060.png";
 
+// Each genre on the ticker links to a representative release.
+const genreLinks: { label: string; url: string }[] = [
+  {
+    label: "Neoclassical Piano",
+    url: "https://www.youtube.com/watch?v=Sso08uzFYnc&list=OLAK5uy_llzF0gvq_zP2V-lo5Yrb2Yi8wiGOuFB20", // Classical Neoclassical
+  },
+  {
+    label: "A Cappella",
+    url: "https://www.youtube.com/watch?v=fsoSJ7gZQ-c&list=OLAK5uy_m0u-S72KgArblJ2G0Pt8y4bSMp9qNFjS8", // Neoclassical A Cappella Volume V
+  },
+  {
+    label: "Disco",
+    url: "https://www.youtube.com/watch?v=1GRI4sF6Q8Q&list=OLAK5uy_n6WoN_AhZOgXi3pW26Sz4P7R_GiPMfD78", // Neoclassical Disco
+  },
+  {
+    label: "Techno",
+    url: "https://www.youtube.com/watch?v=0K6-v5xPcQY&list=OLAK5uy_nFSsEoI-eCe1quvTbkWjDBgHsnCj8SYr8", // Neoclassical Techno
+  },
+  {
+    label: "Jazz",
+    url: "https://www.youtube.com/watch?v=Aec1JlJcxe8&list=OLAK5uy_mqb5ZA1XqFmAX5Uzk-WnCcodEICQ29v8M", // Neoclassical Featherlight Jazz
+  },
+  {
+    label: "Banjo",
+    url: "https://www.youtube.com/watch?v=tBkxlRXGc2s&list=OLAK5uy_k2ejbmo9QWNmvdZajlhh7R4knsEZpNMK4", // Neoclassical Banjo
+  },
+  {
+    label: "Horn",
+    url: "https://www.youtube.com/watch?v=0Z_cX3gUIdc&list=OLAK5uy_lP_O76Z_tfHUykgAcS-b92hH8f00qjc8Y", // Neoclassical Horn
+  },
+  {
+    label: "Ragtime",
+    url: "https://www.youtube.com/watch?v=zG5JKcdr4BY&list=OLAK5uy_kOpkJr6bXF5NtTmzp3PehQgIKlQyEVuow", // Classical Rag
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen w-full bg-background selection:bg-accent selection:text-white">
@@ -62,38 +98,23 @@ export default function Home() {
       {/* Marquee Divider */}
       <div className="bg-foreground text-background py-4 overflow-hidden flex whitespace-nowrap">
         <div className="animate-marquee inline-flex gap-8 items-center font-mono text-sm uppercase tracking-widest">
-          <span>Neoclassical Piano</span>
-          <span className="text-accent">&bull;</span>
-          <span>A Cappella</span>
-          <span className="text-accent">&bull;</span>
-          <span>Disco</span>
-          <span className="text-accent">&bull;</span>
-          <span>Techno</span>
-          <span className="text-accent">&bull;</span>
-          <span>Jazz</span>
-          <span className="text-accent">&bull;</span>
-          <span>Banjo</span>
-          <span className="text-accent">&bull;</span>
-          <span>Horn</span>
-          <span className="text-accent">&bull;</span>
-          <span>Ragtime</span>
-          <span className="text-accent">&bull;</span>
-          {/* Repeat for seamless loop effect */}
-          <span>Neoclassical Piano</span>
-          <span className="text-accent">&bull;</span>
-          <span>A Cappella</span>
-          <span className="text-accent">&bull;</span>
-          <span>Disco</span>
-          <span className="text-accent">&bull;</span>
-          <span>Techno</span>
-          <span className="text-accent">&bull;</span>
-          <span>Jazz</span>
-          <span className="text-accent">&bull;</span>
-          <span>Banjo</span>
-          <span className="text-accent">&bull;</span>
-          <span>Horn</span>
-          <span className="text-accent">&bull;</span>
-          <span>Ragtime</span>
+          {[0, 1].map((loop) => (
+            <span key={loop} className="inline-flex gap-8 items-center">
+              {genreLinks.map(({ label, url }) => (
+                <span key={label} className="inline-flex gap-8 items-center">
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-accent transition-colors"
+                  >
+                    {label}
+                  </a>
+                  <span className="text-accent">&bull;</span>
+                </span>
+              ))}
+            </span>
+          ))}
         </div>
       </div>
 
