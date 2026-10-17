@@ -147,16 +147,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
             <div>
               <h2 className="text-4xl md:text-6xl font-serif tracking-tighter uppercase mb-4">
-                Singles
+                Featured Singles
               </h2>
               <p className="font-mono text-sm text-muted-foreground uppercase tracking-widest max-w-md">
                 Individual works, etudes, and compositional exercises.
               </p>
-            </div>
-            <div className="text-right">
-              <span className="inline-block bg-foreground text-background font-mono text-xs font-bold uppercase tracking-widest px-3 py-1 mb-2">
-                {singles.length} Releases
-              </span>
             </div>
           </div>
 

@@ -1,15 +1,15 @@
 # 🎹 NEOCLASSICAL PIANO — The Official Site
 
-> **One composer. Fourteen albums. Nine singles. Every genre from a cappella to banjo.**
+> **Explore albums and featured singles spanning neoclassical piano, a cappella, disco, techno, jazz, banjo, ragtime, and horn.**
 > A stark, editorial promotional site for a catalog of modern neoclassical music — built to turn a 3-second first impression into an evening of listening.
 
 ---
 
 ## 🎼 What This Is
 
-**Neoclassical Piano** is the promotional home for a modern composer's complete catalog — intricate etudes, a cappella vocal works, harpsichord prestos, and genre-bending experiments in **disco, techno, jazz, banjo, ragtime, and horn**. The site does one thing exceptionally well: it puts the music front and center and sends listeners straight to it.
+**Neoclassical Piano** showcases a selection from the composer's catalog — etudes, a cappella works, harpsichord prestos, and music spanning **disco, techno, jazz, banjo, ragtime, and horn**. Browse the releases and follow their links to listen.
 
-- **The Full Catalog, One Page** — Every album and every single, each with a real video thumbnail and a one-click link to YouTube.
+- **Albums and Featured Singles, One Page** — Browse the listed releases, each with a video thumbnail and a link to YouTube. The featured singles are a selection, not the artist's full singles catalog.
 - **Multi-Platform** — Works not found on YouTube are available on **Amazon Music**.
 - **The Artist, Up Front** — The composer's portrait anchors the page from the first pixel.
 
@@ -23,7 +23,7 @@
 - **The Genre Experiments** — *Neoclassical Disco*, *Neoclassical Techno*, *Neoclassical Banjo*, *Neoclassical Horn*, *Neoclassical Featherlight Jazz*, and *Neoclassical Featherlight Disco*.
 - **The Classical Line** — *Classical Neoclassical*, *Classical Rag*, and *EZ Neoclassical*.
 
-### Singles — 9 Releases
+### Featured Singles
 
 - **Two-Piano Works** — *C Major Etude for Two Pianos*, *Simple Piece for Two Pianos*, *G Major Bagatelle for Two Pianos*, and the *Etude for Two Pianos "The Beast"*.
 - **The November 2022 Sessions** — Etudes, prestos, a song without words, a G minor harpsichord presto, and a compositional exercise — dated like journal entries.
@@ -43,7 +43,7 @@
 ## ⚙️ Technical Features
 
 - **Modern Stack** — `React 18` + `Vite` + `TypeScript`, styled with `Tailwind CSS` and `shadcn/ui` primitives.
-- **Single-Page, Zero-Backend** — The entire catalog is served as a static frontend; no database or server required to browse.
+- **Single-Page, Zero-Backend** — The listed releases are served as a static frontend; no database is required to browse.
 - **Typed Catalog Data** — Albums and singles live in one typed data module (`src/data/music.ts`) — adding a release is a five-line edit.
 - **Monorepo Architecture** — A `pnpm` workspace with the site under `artifacts/neoclassical-piano/`.
 
@@ -51,8 +51,8 @@
 
 ## 🎧 Designed For
 
-- **New Listeners** — Land, browse, click, listen. The whole catalog is one scroll away.
-- **Returning Fans** — A single canonical place to find every album and single, labeled and organized.
+- **New Listeners** — Land, browse, click, listen. Explore albums and featured singles on one page.
+- **Returning Fans** — Find the listed albums and singles, labeled and organized.
 - **The Curious** — Anyone who sees "Neoclassical Banjo" next to "A Cappella Volume V" and has to know what that sounds like.
 
 ---

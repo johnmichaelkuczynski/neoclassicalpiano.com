@@ -1,0 +1,1 @@
+- [Catalog scope](catalog-scope.md) — Featured singles are not the artist's total releases.
