@@ -142,12 +142,12 @@ export default function Home() {
       </section>
 
       {/* Singles Section */}
-      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-white border-t border-border">
+      <section id="singles" className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-white border-t border-border">
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
             <div>
               <h2 className="text-4xl md:text-6xl font-serif tracking-tighter uppercase mb-4">
-                Featured Singles
+                Singles
               </h2>
               <p className="font-mono text-sm text-muted-foreground uppercase tracking-widest max-w-md">
                 Individual works, etudes, and compositional exercises.

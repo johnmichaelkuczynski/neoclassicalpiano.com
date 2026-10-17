@@ -1,3 +1,5 @@
+import { additionalSingles } from "./additional-singles";
+
 export type Track = {
   title: string;
   youtubeId: string;
@@ -122,5 +124,6 @@ export const singles: Track[] = [
     title: "Compositional Exercise November 5 2022",
     youtubeId: "LuFXNfnkV98",
     url: "https://www.youtube.com/watch?v=LuFXNfnkV98&list=OLAK5uy_nVMdj5MwaHcHK_E7Y-5fOlnlf_XfrWzMs"
-  }
+  },
+  ...additionalSingles,
 ];
